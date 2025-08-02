@@ -1,0 +1,38 @@
+.nav {
+  width: 254px;
+  height: 70px;
+
+  display: flex;
+  flex-direction: column;
+  /* /* justify-content: center; */
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 90px;
+
+  /* background-color: red; */
+}
+
+.nav__image {
+  max-width: 32px;
+  /* margin-bottom: 38px; */
+}
+
+.nav__subtitle {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 544px) {
+  .nav {
+    margin-bottom: 50px;
+
+    max-width: 188px;
+  }
+}
