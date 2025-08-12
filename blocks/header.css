@@ -70,7 +70,6 @@
 }
 
 /* MOBILE */
-
 @media screen and (max-width: 544px) {
   .header {
     padding-left: 16px;

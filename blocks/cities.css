@@ -1,0 +1,222 @@
+.cities {
+  width: 100%;
+  margin-bottom: 90px;
+}
+
+.cities__container {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  grid-template-rows: auto auto 1fr;
+  gap: 48px 40px;
+  grid-template-areas:
+    "title artist"
+    "images text"
+    "button text";
+}
+
+.cities__grid {
+  width: 100%;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.cities__gales {
+}
+
+.cities__title {
+  width: 460px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  max-width: 460px;
+
+  margin: 0;
+
+  grid-area: title;
+  align-self: end;
+}
+
+.cities__artist-container {
+  display: flex;
+  grid-area: artist;
+  align-self: end;
+}
+
+.cities__artist-name {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.cities__artist-title {
+  opacity: 70%;
+  display: block;
+}
+
+.cities__image-container {
+  grid-area: images;
+}
+
+.cities__description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cities__description {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  grid-area: texto;
+}
+
+.cities__image {
+  width: 460px;
+  height: 460px;
+  margin-bottom: 48px;
+}
+
+.cities__button {
+  width: 356px;
+  height: 48px;
+  background: linear-gradient(
+    to right,
+    rgba(2, 120, 254, 1),
+    rgba(0, 58, 123, 1)
+  );
+
+  border-radius: 6px;
+  border: 0;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  color: #fff;
+
+  grid-area: button;
+
+  box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cities__button:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(45, 85, 135, 1),
+    rgba(25, 40, 65, 1)
+  );
+  box-shadow: none;
+  transition: all 0.85s ease;
+}
+
+/* TABLET */
+@media screen and (min-width: 545px) and (max-width: 1024px) {
+  .cities {
+    width: 100%;
+    margin-bottom: 90px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .cities__grid {
+    gap: 72px;
+  }
+  .cities__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: auto; /* 46 PX FALAR COM INSTRUTOR */
+    max-width: 340px;
+    margin: 0;
+
+    grid-area: title;
+    align-self: end;
+  }
+
+  .cities__artist-name {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .cities__description {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+  }
+
+  .cities__button {
+    /* width: 315px;
+    height: 22px; */
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+
+    grid-area: button;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 544px) {
+  .cities {
+    width: 100%;
+    margin-bottom: 90px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .cities__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+
+    grid-template-areas:
+      "title"
+      "artist"
+      "images"
+      "text"
+      "button";
+  }
+
+  .cities__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 35px;
+    max-width: 340px;
+    margin: 0;
+
+    grid-area: title;
+    align-self: end;
+  }
+
+  .cities__artist-name {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .cities__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+  }
+
+  .cities__button {
+    width: 288px;
+    height: 48px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+  }
+}
